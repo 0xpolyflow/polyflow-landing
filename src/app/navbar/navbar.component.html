@@ -1,0 +1,65 @@
+<div class="absolute hidden top-[69px] left-0 py-2 text-sm justify-center w-full lg:flex flex-row bg-indigo-100
+     hover:bg-indigo-500 hover:text-white transition-all cursor-pointer text-indigo-700 border-b border-dashed border-slate-400">
+    <div class="max-w-3xl w-full flex flex-row text-xs text-center justify-center font-medium ">
+        🎉 Create an account now, give us feedback & we'll cut your subscription price in half - FOREVER
+    </div>
+</div>
+<div class="w-screen fixed backdrop-blur-[4px] top-0 text-slate-800 left-0 z-50
+     border-b border-dashed border-slate-400 pb-3 flex flex-row justify-center">
+    <div class="max-w-6xl mt-3 w-full flex flex-row justify-between items-center px-8">
+        <a class="flex flex-row gap-x-4 items-center" routerLink="/">
+            <img class="w-8 h-8 lg:w-10 lg:h-10" src="../../assets/pf-logo.png" alt="" srcset="">
+            <div class="flex text-lg font-medium flex-col">Polyflow <span class=" text-slate-500 uppercase text-xs">📊 Analytics</span> </div>
+        </a>
+        <div class="hidden lg:flex flex-row items-center lg:gap-x-10 gap-x-6 font-medium cursor-pointer">
+            <a class="flex flex-row gap-x-2 items-center hover:scale-105 hover:text-indigo-800 hover:font-semibold transition-all uppercase" routerLinkActive="underline" routerLink="/pricing">
+                Pricing
+            </a><a class="flex flex-row gap-x-2 items-center hover:scale-105 transition-all uppercase" routerLinkActive="underline" routerLink="docs">
+                Docs
+            </a><a class="flex flex-row gap-x-2 items-center hover:scale-105 transition-all uppercase" routerLinkActive="underline" routerLink="/aboutus">
+                About Us
+            </a>
+            <a class="flex flex-row gap-x-2 items-center hover:scale-105 transition-all uppercase" 
+                routerLinkActive="underline" target="_blank" href="https://polyflow.substack.com/">
+                Blog
+            </a>
+            <a class="flex flex-row gap-x-3 items-center bg-indigo-100 text-indigo-800 py-2 px-8 rounded-lg
+             hover:bg-indigo-500 hover:text-white transition-all uppercase" routerLinkActive="underline" 
+              href="https://polyflow-console-0xmislav.vercel.app/">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+              </svg>
+              
+              
+                Log In
+            </a>
+        </div>
+        <div class="cursor-pointer lg:hidden" (click)="toggleMobileMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+            </svg>
+              
+        </div>
+    </div>
+</div>
+
+<div [@fade] class="fixed px-8 w-screen h-screen z-50 bg-gradient-to-b from-indigo-50 to-white text-2xl uppercase font-semibold text-slate-700
+ left-0 flex flex-col justify-between py-32 items-center gap-y-8" *ngIf="mobileMenuVisible$ | async">
+    <div class="cursor-pointer hover:text-indigo-800" (click)="toggleMobileMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg> 
+    </div>
+    <div (click)="toggleMobileMenu()" routerLink="/" class="cursor-pointer hover:text-indigo-700">Home</div>
+    <div (click)="toggleMobileMenu()" routerLink="/pricing" class="cursor-pointer hover:text-indigo-700">Pricing</div>
+    <div (click)="toggleMobileMenu()" class="cursor-pointer hover:text-indigo-700">Docs</div>
+    <div (click)="toggleMobileMenu()" routerLink="/aboutus" class="cursor-pointer hover:text-indigo-700">About Us</div>
+    <div (click)="toggleMobileMenu()" class="cursor-pointer px-12 py-4 w-full justify-center rounded-lg items-center
+        bg-indigo-100 text-base text-indigo-700 hover:text-white hover:bg-indigo-500 flex flex-row gap-x-2">
+     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+      </svg>
+      
+        <div>Get started</div>
+    </div>
+</div>

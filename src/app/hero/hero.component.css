@@ -1,0 +1,13 @@
+.heroholder {
+    background-image: url('../../assets/hero-add.png');
+    background-position-x: 200px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }
+  
+  .heroholder-flip {
+    background-image: url('../../assets/hero-add-rot.png');
+    background-position-x: 0px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }

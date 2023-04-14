@@ -1,0 +1,20 @@
+<div class="w-screen min-h-screen flex gap-y-8 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 flex-col
+     text-white items-center justify-center">
+    <div class="flex flex-col gap-y-4 px-8" [@fade] *ngIf="showSection$ | async">
+        <div class="text-4xl font-semibold tracking-widest">👋 About us</div>
+        <div class="max-w-3xl w-full">
+            Polyflow is built by a group of Web3 industry veterans who have been actively building, educating & evangelizing in the
+            Web3 & Ethereum ecosystems since 2016. <br><br>
+            We are connected by a common love & enthusiasm for the open internet & technologies which enable Web3.
+        </div>
+    
+    
+        <div routerLink="/" class="text-md hover:shadow-2xl mt-8 flex flex-row items-center justify-center gap-x-4 border py-4 px-10 uppercase
+        hover:bg-slate-200 hover:text-slate-800 cursor-pointer transition-all rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+              </svg>          
+            Back to landing page
+        </div>
+    </div>
+</div>

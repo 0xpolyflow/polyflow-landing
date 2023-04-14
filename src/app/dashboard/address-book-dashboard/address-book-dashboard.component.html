@@ -1,0 +1,37 @@
+<div class="w-full flex flex-row justify-center">
+    <div class="max-w-6xl w-full h-full text-sm text-slate-200">
+        <div class="mb-8 flex flex-row items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+              </svg>
+            <div class="ml-2"><b>BAYC Explorer</b> Address Book</div>          
+        </div>
+        <div class="bg-content p-8 rounded-lg">
+            <div class="grid grid-cols-3 uppercase font-medium">
+                <div>Alias</div>
+                <div>Address</div>
+                <div class="text-right">Actions</div>
+            </div>
+            <div class="grid grid-cols-3 mt-3" *ngFor="let item of addresses">
+                <div>{{item.alias}}</div>
+                <div>{{item.address}}</div>
+                <div class="flex flex-row items-center justify-end">
+                    <div class="p-2 hover:bg-slate-900 cursor-pointer border rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.5" 
+                            stroke="currentColor" 
+                            class="w-2 h-2">
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                        </svg>      
+                    </div>
+                                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

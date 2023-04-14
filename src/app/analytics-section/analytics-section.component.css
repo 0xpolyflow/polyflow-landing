@@ -1,0 +1,33 @@
+.heroholder {
+    background-image: url('../../assets/hero-add.png');
+    background-position-x: 200px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }
+  
+  .heroholder-flip {
+    background-image: url('../../assets/hero-add-rot.png');
+    background-position-x: 0px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }
+
+  .bg-fullytics {
+    background-image: url('../../assets/pf-fullytics.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  @keyframes background-pan {
+      from {
+        background-position: 0% center;
+      }
+      to {
+        background-position: -200% center;
+      }
+  }
+
+  .pan-bg {
+    background-size: 400%;
+    animation: background-pan 5s linear infinite;
+  }

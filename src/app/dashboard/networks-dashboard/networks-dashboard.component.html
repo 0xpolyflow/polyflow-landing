@@ -1,0 +1,76 @@
+<div class="w-full h-full flex flex-col items-center text-sm text-slate-200">
+    <div class="max-w-6xl w-full">
+        <div class="mb-8 flex flex-row items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+              </svg>
+            <div class="ml-2"><b>BAYC Explorer</b> Networks</div>          
+        </div>
+        <table class="w-full p-8 bg-content rounded-lg">
+            <tr class="[&>*]:px-8 [&>*]:py-4 [&>*]:text-left">
+                <th>Alias</th>
+                <th>Name</th>
+                <th>Short Name</th>
+                <th>Native Currency</th>
+                <th>RPCs</th>
+                <th>Actions</th>
+            </tr>
+            <tr class="[&>*]:px-8 [&>*]:py-4 [&>*]:text-left [&>*]:text-xs" *ngFor="let network of networks">
+                <td>alias</td>
+                <td>{{network.name}}</td>
+                <td>short</td>
+                <td>{{network.currencyName}}</td>
+                <td>{{network.rpcs}}</td>
+                <td class="flex flex-row items-center gap-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                        class="w-4 h-4 cursor-pointer hover:scale-110">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                        class="w-4 h-4 cursor-pointer hover:scale-110">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                      </svg>
+                      
+                </td>
+            </tr>
+        </table>
+        <div (click)="toggleModal()" class="w-full justify-center cursor-pointer hover:bg-slate-200 hover:text-slate-700
+         items-center border border-dashed flex flex-row gap-x-2 transition-all
+            rounded-lg mt-8 py-2 text-xs uppercase font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>              
+            Add network</div>
+    </div>
+</div>
+
+<div [@fade] *ngIf="isAddNetworkModalOpen$ | async" class="absolute left-0 top-0 w-screen h-screen backdrop-blur-[2px] bg-black
+    bg-opacity-50 flex flex-row items-center justify-center">
+    <div class="max-w-2xl w-full bg-content p-8 gap-y-2 flex flex-col rounded-lg shadow-lg">
+        <div class="uppercase w-full flex flex-row justify-between items-center text-sm font-semibold mb-2">
+            Add new network
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                (click)="toggleModal()" class="w-6 h-6 cursor-pointer hover:scale-105">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              
+        </div>
+        <div class="text-xs uppercase">Alias</div>
+        <input placeholder="e.g. eth-chain, arbitrum-network" class="w-full px-4 py-2 rounded-lg bg-transparent border border-slate-400 text-sm" type="text">
+        <div class="text-xs uppercase">Name</div>
+        <input placeholder="e.g. Ethereum, Optimism" class="w-full px-4 py-2 rounded-lg bg-transparent border border-slate-400 text-sm" type="text">
+        <div class="text-xs uppercase">Short name</div>
+        <input placeholder="e.g. Eth, AVAX" class="w-full px-4 py-2 rounded-lg bg-transparent border border-slate-400 text-sm" type="text">
+        <div class="text-xs uppercase">Currency name</div>
+        <input placeholder="e.g. ETH, MATIC" class="w-full px-4 py-2 rounded-lg bg-transparent border border-slate-400 text-sm" type="text">
+        <div class="text-xs uppercase">RPCs</div>
+        <textarea rows="5" placeholder="e.g. examplerpc.xyz/polygon, examplerpc.xyz/avax" class="w-full px-4 py-2 rounded-lg bg-transparent border border-slate-400 text-sm" type="text"></textarea>
+        <div class="w-full py-2 flex flex-row items-center justify-center gap-x-2 border border-slate-400 rounded-lg hover:text-slate-800
+             hover:bg-slate-200 cursor-pointer transition-all text-sm uppercase font-medium">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>              
+             Add network
+            </div>
+    </div>
+</div>
