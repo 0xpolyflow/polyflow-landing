@@ -26,6 +26,7 @@ import { PluginsDashboardComponent } from './dashboard/plugins-dashboard/plugins
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FooterComponent } from './footer/footer.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
+import { IconItemHolderComponent } from './shared/components/icon-item-holder/icon-item-holder.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
     AboutusComponent,
     FooterComponent,
     ThankYouComponent,
+    IconItemHolderComponent,
   ],
   imports: [
     BrowserModule,
