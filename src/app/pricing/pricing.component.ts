@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-pricing',
@@ -9,11 +10,11 @@ export class PricingComponent implements OnInit {
 
   pricingType: 'month' | 'year' = 'month'
 
+  existingUser = this.route.snapshot.queryParams['existingUser']
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   priceItems: PricingItem[] = [
     {

@@ -1,9 +1,9 @@
-<div class="w-screen min-h-screen flex flex-col justify-center pb-32
+<div class="w-screen min-h-screen flex flex-col justify-center pb-32 border-b border-dashed
  items-center px-4 bg-gradient-to-br from-indigo-50 to-white">
 
     <app-navbar></app-navbar>
 
-    <div class="flex flex-row items-center w-full max-w-5xl  lg:mt-36 mt-24">
+    <div class="flex flex-row items-center w-full max-w-5xl  lg:mt-28 mt-24">
         <div class="flex flex-row w-full justify-center max-w-5xl gap-x-4 
         font-semibold text-indigo-800 text-sm uppercase  mb-4">
             <div [class.!border-indigo-700]="pricingType === 'month'"
@@ -39,9 +39,12 @@
                 </div>
                 <div class="text-xs mt-1">/month</div>
 
-                <a href="https://app.polyflow.dev/?signup=true&pricing={{item.name.toLowerCase()}}" [class.!bg-blue-600]="item.accented"
+                <a href="https://app.polyflow.dev/?signup=true&pricing={{item.name.toLowerCase()}}&existingUser={{existingUser}}" 
+                    [class.!bg-blue-600]="item.accented"
                     class="mt-4 font-semibold rounded-lg uppercase py-3 hover:!bg-indigo-700 bg-indigo-500 text-white text-xs 
-                    transition-all flex flex-row justify-center items-center">Start a 14 day free trial</a>
+                    transition-all flex flex-row justify-center items-center">
+                        Start a 14 day free trial
+                </a>
 
                 <hr [class.border-blue-200]="item.accented" class="my-2 border-indigo-100">
 
@@ -105,3 +108,5 @@
         </div>
     </div>
 </div>
+
+<app-footer></app-footer>
