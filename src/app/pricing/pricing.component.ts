@@ -19,7 +19,7 @@ export class PricingComponent implements OnInit {
   priceItems: PricingItem[] = [
     {
       name: 'Business',
-      description: 'A package with high usage limits, a dedicated account manager, ability to self-host entire infrastructure & create customized data pipelines.',
+      description: 'Best for scaleups & large devshops.',
       accented: false,
       prices: {
         buyNowMonthly: { amount: 298, stripeURL: 'https://buy.stripe.com/test_5kA9Ee7rP07Feuk5kl' },
@@ -31,12 +31,12 @@ export class PricingComponent implements OnInit {
         seats: "20",
         domains: "Unlimited",
         trackedWallets: '5.000',
-        other: ['Everything from Pro', 'Dedicated Account Manager','Self-Host Platform']
+        other: ['Everything from Pro', 'Dedicated Account Manager', 'Direct GraphQL Access', 'Self Hosting (+$499/mo)']
       }
     },
     {
       name: 'Pro',
-      description: 'A package for companies managing multiple Web3 projects with dedicated marketing and/or customer support persons.',
+      description: 'Best for startups & smaller devshops.',
       accented: true,
       prices: {
         buyNowMonthly: { amount: 58, stripeURL: '' },
@@ -48,12 +48,12 @@ export class PricingComponent implements OnInit {
         seats: "5",
         domains: "5",
         trackedWallets: '1.000',
-        other: ['Everything from Indie', '24H Support','Webhooks', 'Download data']
+        other: ['Everything from Indie', '24H Support', 'CSV Data Export']
       }
     },
     {
       name: 'Indie',
-      description: 'One-stop shop solution to troubleshoot user issues, track blockchain event conversions & attribute Web3 growth channels.',
+      description: 'Best for early stage startups',
       accented: false,
       prices: {
         buyNowMonthly: { amount: 18, stripeURL: '' },
