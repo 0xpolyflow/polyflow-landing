@@ -48,7 +48,7 @@ export class PricingComponent implements OnInit {
         seats: "Up to 5",
         domains: "5",
         trackedWallets: '1.000',
-        other: ['Everything from Indie', '24H Support', 'CSV Data Export']
+        other: ['Everything from Indie', '24H Support', 'CSV Data Export', 'User net worth analytics', 'User token analytics', 'User NFT analytics']
       }
     },
     {
