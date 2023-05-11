@@ -31,7 +31,7 @@ export class PricingComponent implements OnInit {
         seats: "20",
         domains: "Unlimited",
         trackedWallets: '5.000',
-        other: ['Everything from Pro', 'Dedicated Account Manager', 'Direct GraphQL Access', 'Self Hostingp (+$499/mo)']
+        other: ['Everything from Pro', 'Dedicated Account Manager', 'Direct GraphQL Access', 'Self Hosting (+$499/mo)']
       }
     },
     {
