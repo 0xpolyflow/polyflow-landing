@@ -18,40 +18,6 @@ export class PricingComponent implements OnInit {
 
   priceItems: PricingItem[] = [
     {
-      name: 'Business',
-      description: 'Best for scaleups & large devshops.',
-      accented: false,
-      prices: {
-        buyNowMonthly: { amount: 298, stripeURL: 'https://buy.stripe.com/test_5kA9Ee7rP07Feuk5kl' },
-        buyNowYearly: { amount: 91, stripeURL: '' },
-        trialMonthly: { amount: 19, stripeURL: '' },
-        trialYearly: { amount: 19, stripeURL: '' },
-      },
-      features: {
-        seats: "6-20",
-        domains: "Unlimited",
-        trackedWallets: '5.000',
-        other: ['Everything from Pro', 'Dedicated Account Manager', 'Direct GraphQL Access', 'Self Hosting (+$499/mo)']
-      }
-    },
-    {
-      name: 'Pro',
-      description: 'Best for startups & smaller devshops.',
-      accented: true,
-      prices: {
-        buyNowMonthly: { amount: 58, stripeURL: '' },
-        buyNowYearly: { amount: 19, stripeURL: '' },
-        trialMonthly: { amount: 19, stripeURL: '' },
-        trialYearly: { amount: 19, stripeURL: '' },
-      },
-      features: {
-        seats: "2-5",
-        domains: "2-5",
-        trackedWallets: '1.000',
-        other: ['Everything from Indie', '24H Support', 'CSV Data Export']
-      }
-    },
-    {
       name: 'Indie',
       description: 'Best for early stage startups',
       accented: false,
@@ -65,14 +31,44 @@ export class PricingComponent implements OnInit {
         seats: "1",
         trackedWallets: '100',
         domains: "1",
-        other: ['Analytics Platform', 'Attribution Platform', 'Troubleshooting Platfrom']
+        other: ['Analytics Platform', 'Attribution Platform', 'Troubleshooting Platfrom', 'Multi-Chain Tx Tracking']
       }
     },
-   
+    {
+      name: 'Pro',
+      description: 'Best for startups & smaller devshops.',
+      accented: true,
+      prices: {
+        buyNowMonthly: { amount: 58, stripeURL: '' },
+        buyNowYearly: { amount: 19, stripeURL: '' },
+        trialMonthly: { amount: 19, stripeURL: '' },
+        trialYearly: { amount: 19, stripeURL: '' },
+      },
+      features: {
+        seats: "Up to 5",
+        domains: "5",
+        trackedWallets: '1.000',
+        other: ['Everything from Indie', '24H Support', 'CSV Data Export']
+      }
+    },
+    {
+      name: 'Business',
+      description: 'Best for scaleups & large devshops.',
+      accented: false,
+      prices: {
+        buyNowMonthly: { amount: 298, stripeURL: 'https://buy.stripe.com/test_5kA9Ee7rP07Feuk5kl' },
+        buyNowYearly: { amount: 91, stripeURL: '' },
+        trialMonthly: { amount: 19, stripeURL: '' },
+        trialYearly: { amount: 19, stripeURL: '' },
+      },
+      features: {
+        seats: "Up to 20",
+        domains: "Unlimited",
+        trackedWallets: '5.000',
+        other: ['Everything from Pro', 'Dedicated Account Manager', 'Direct GraphQL Access', 'Self Hosting (+$499/mo)', 'Downloadable Reports']
+      }
+    },
     
-
-    
-
   ]
 
 }
