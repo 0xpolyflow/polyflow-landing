@@ -28,7 +28,7 @@ export class PricingComponent implements OnInit {
         trialYearly: { amount: 19, stripeURL: '' },
       },
       features: {
-        seats: "20",
+        seats: "6-20",
         domains: "Unlimited",
         trackedWallets: '5.000',
         other: ['Everything from Pro', 'Dedicated Account Manager', 'Direct GraphQL Access', 'Self Hosting (+$499/mo)']
@@ -45,8 +45,8 @@ export class PricingComponent implements OnInit {
         trialYearly: { amount: 19, stripeURL: '' },
       },
       features: {
-        seats: "5",
-        domains: "5",
+        seats: "2-5",
+        domains: "2-5",
         trackedWallets: '1.000',
         other: ['Everything from Indie', '24H Support', 'CSV Data Export']
       }
