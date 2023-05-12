@@ -48,7 +48,7 @@ export class PricingComponent implements OnInit {
         seats: "Up to 5",
         domains: "5",
         trackedWallets: '1.000',
-        other: ['Everything from Indie', '24H Support', 'CSV Data Export', 'User net worth analytics', 'User token analytics', 'User NFT analytics']
+        other: ['Everything from Indie', '24H Support', 'User TX activity analytics', 'Basic user net worth data' , 'CSV Data Export']
       }
     },
     {
@@ -65,7 +65,7 @@ export class PricingComponent implements OnInit {
         seats: "Up to 20",
         domains: "Unlimited",
         trackedWallets: '5.000',
-        other: ['Everything from Pro', 'Dedicated Account Manager', 'Direct GraphQL Access', 'Self Hosting (+$499/mo)', 'Downloadable Reports']
+        other: ['Everything from Pro', 'Dedicated Account Manager', 'Direct GraphQL Access', 'Full user net worth analytics', 'User token analytics', 'User NFT analytics', 'Downloadable Reports', 'Self Hosting (+$499/mo)']
       }
     },
     
