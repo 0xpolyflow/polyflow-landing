@@ -14,8 +14,9 @@
 
   .bg-fullytics {
     background-image: url('../../assets/sessions.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+
   }
   
   @keyframes background-pan {
