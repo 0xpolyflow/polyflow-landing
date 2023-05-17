@@ -14,7 +14,8 @@ export class PricingComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+  }
 
   priceItems: PricingItem[] = [
     {
