@@ -31,6 +31,8 @@
                     {{item.description}}</div>
 
                 <div class="mb-1 mt-3 font-semibold uppercase text-xs">🎉 Limited launch promo</div>
+                <div class="text-red-700 font-medium mt-1 mb-1 uppercase">{{item.limitedClaims.claimed}} / {{item.limitedClaims.total}} claimed</div>
+
                 <div class="text-4xl  font-bold mt-1">
                     <span class="line-through text-2xl">${{item.prices.buyNowMonthly.amount}}</span>
                     <span class="text-4xl ml-2">${{item.prices.buyNowMonthly.amount / 2}}</span>
@@ -42,6 +44,7 @@
                     transition-all flex flex-row justify-center items-center">
                     Start a 30 day free trial
                 </a>
+                
 
                 <hr [class.border-blue-200]="item.accented" class="my-2 border-indigo-100">
 

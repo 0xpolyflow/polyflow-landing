@@ -33,6 +33,10 @@ export class PricingComponent implements OnInit {
         trackedWallets: '100',
         domains: "1",
         other: ['Analytics Platform', 'Attribution Platform', 'Troubleshooting Platfrom', 'Multi-Chain Tx Tracking']
+      },
+      limitedClaims: {
+        claimed: 27,
+        total: 50
       }
     },
     {
@@ -50,6 +54,10 @@ export class PricingComponent implements OnInit {
         domains: "5",
         trackedWallets: '1.000',
         other: ['Everything from Indie', '24H Support', 'User TX activity analytics', 'Basic user net worth data' , 'CSV Data Export']
+      },
+      limitedClaims: {
+        claimed: 38,
+        total: 50
       }
     },
     {
@@ -67,6 +75,10 @@ export class PricingComponent implements OnInit {
         domains: "Unlimited",
         trackedWallets: '5.000',
         other: ['Everything from Pro', 'Dedicated Account Manager', 'Direct GraphQL Access', 'Full user net worth analytics', 'User token analytics', 'User NFT analytics', 'Downloadable Reports', 'Self Hosting (+$499/mo)']
+      },
+      limitedClaims: {
+        claimed: 19,
+        total: 20
       }
     },
     
@@ -89,5 +101,9 @@ interface PricingItem {
     domains: string,
     trackedWallets: string,
     other: string[]
+  },
+  limitedClaims: {
+    claimed: number,
+    total: number
   }
 }
