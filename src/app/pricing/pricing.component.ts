@@ -74,7 +74,7 @@ export class PricingComponent implements OnInit {
         seats: "Up to 20",
         domains: "Unlimited",
         trackedWallets: '5.000',
-        other: ['Everything from Pro', 'Dedicated Account Manager', 'Direct GraphQL Access', 'Full user net worth analytics', 'User token analytics', 'User NFT analytics', 'Downloadable Reports', 'Self Hosting (+$499/mo)']
+        other: ['Everything from Pro', 'Dedicated Account Manager', 'Direct GraphQL Access', 'Full user net worth analytics', 'User token analytics', 'User NFT analytics', 'Downloadable Reports']
       },
       limitedClaims: {
         claimed: 19,
