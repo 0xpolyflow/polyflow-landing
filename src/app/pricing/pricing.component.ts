@@ -32,7 +32,7 @@ export class PricingComponent implements OnInit {
         seats: "1",
         trackedWallets: '100',
         domains: "1",
-        other: ['Analytics Platform', 'Attribution Platform', 'Troubleshooting Platfrom', 'Multi-Chain Tx Tracking']
+        other: ['Basic Analytics', 'Basic Attribitions', 'Multi-Chain Tx Tracking']
       },
       limitedClaims: {
         claimed: 27,
@@ -53,7 +53,7 @@ export class PricingComponent implements OnInit {
         seats: "Up to 5",
         domains: "5",
         trackedWallets: '1.000',
-        other: ['Everything from Indie', '24H Support', 'User TX activity analytics', 'Basic user net worth data' , 'CSV Data Export']
+        other: ['Full Analytics', 'Full Attributions', '24H Support', 'User TX activity analytics', 'Basic user net worth data' , 'CSV Data Export']
       },
       limitedClaims: {
         claimed: 38,
@@ -74,7 +74,7 @@ export class PricingComponent implements OnInit {
         seats: "Up to 20",
         domains: "Unlimited",
         trackedWallets: '5.000',
-        other: ['Everything from Pro', 'Dedicated Account Manager', 'Direct GraphQL Access', 'Full user net worth analytics', 'User token analytics', 'User NFT analytics', 'Downloadable Reports']
+        other: ['Everything from Pro', 'Full user net worth analytics', 'User token analytics', 'User NFT analytics', 'Downloadable Reports', 'Direct GraphQL Access']
       },
       limitedClaims: {
         claimed: 19,
