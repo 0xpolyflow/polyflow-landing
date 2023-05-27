@@ -96,16 +96,16 @@
 <div class="w-full flex bg-gradient-to-br from-indigo-100 to-emerald-50
      lg:flex border-b flex-col pt-24 border-dashed border-slate-400 items-center gap-y-8 px-8">
 
-    <div class="text-3xl leading-[3rem] max-w-4xl text-transparent text-indigo-500 bg-clip-text 
+    <div class="lg:text-3xl text-xl lg:leading-[3rem] max-w-4xl text-transparent text-indigo-500 bg-clip-text 
      text-center flex uppercase font-bold">
         Integrate in minutes, track across all chains
     </div>
     
-    <div class="w-full px-4 select-none bg-slate-800 shadow-md rounded-lg py-3 max-w-3xl text-sm text-center text-white">
+    <div class="w-full px-4 select-none bg-slate-800 shadow-md rounded-lg py-3 max-w-3xl lg:text-sm text-xs text-center text-white">
         &lt;script src='https://sdk.polyflow.dev/generate?api=[your-api-key]'&gt;&lt;/script&gt;
     </div>
 
-    <div class="max-w-3xl text-center">
+    <div class="max-w-3xl lg:text-center text-slate-600">
         Paste our tracking script in the header of your frontend app & Polyflow will start tracking all activity on your dApp - on all of your smart contracts & across all deployed
         chains, rollups & private networks.
     </div>
@@ -180,10 +180,9 @@ justify-center items-center">
 
 <div class="w-screen heroholder-flip bg-opacity-0 flex flex-row border-b border-dashed border-slate-400
 justify-center items-center">
-    <div class="max-w-6xl w-full min-h-screen mx-6 flex lg:flex-row flex-col lg:gap-x-16 items-center justify-center text-indigo-900">
-        <div class="flex flex-row lg:hidden justify-start border-8 border-slate-800 rounded-lg mt-4 lg:mt-0">
-            <img class="" src="../../assets/hero-lytics.png" alt="" srcset="">
-        </div>
+    <div class="max-w-6xl w-full min-h-screen mx-6 flex my-12
+    lg:flex-row flex-col lg:gap-x-16 items-center justify-center text-indigo-900">
+        
 
         <div class="hidden lg:flex w-8/12 mt-4 lg:mt-0">
             <img class="border-[12px] border-slate-800 rounded-lg" src="../../assets/hero-lytics.png" alt=""
@@ -207,15 +206,12 @@ justify-center items-center">
                     py-3 px-8 gap-x-2 rounded-lg bg-indigo-100 hover:bg-indigo-700 hover:text-white transition-all">
                     Get started now
                 </div>
-                <!-- <div class="font-semibold uppercase py-3 justify-center
-             px-8 rounded-lg bg-indigo-100 flex flex-row gap-x-2 hover:bg-indigo-800 hover:shadow-sm transition-all hover:text-white cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                  </svg>    
-                Learn more
-            </div> -->
             </div>
         </div>
+        <div class="flex flex-row mt-8 lg:hidden justify-start border-8 border-slate-800 rounded-lg lg:mt-0">
+            <img class="" src="../../assets/hero-lytics.png" alt="" srcset="">
+        </div>
+        
     </div>
 </div>
 
@@ -241,7 +237,7 @@ justify-center items-center px-4">
                         from-sky-500  to-violet-500 lg:text-center lg:text-4xl font-bold mb-2 gap-y-2 ">
                     Track blockchain-native conversions for your growth channels
                 </b>
-                <div class="lg:text-lg text-base max-w-3xl lg:mt-4 text-slate-700 lg:text-center w-full">
+                <div class="lg:text-lg text-base max-w-3xl lg:mt-4 text-slate-600 lg:text-center w-full">
                     Learn which campaigns, growth channels or ads result in the greatest number of connected wallets &
                     executed transactions. Create blockchain-based conversion events (e.g. user minted an NFT) and
                     connect
@@ -261,13 +257,10 @@ justify-center items-center px-4">
 <div class="w-screen heroholder-flip lg:py-24 bg-opacity-0 flex flex-row border-b border-dashed border-slate-400
 justify-center items-center">
     <div
-        class="max-w-6xl w-full min-h-screen mx-6 flex lg:flex-row flex-col lg:gap-x-16 items-center justify-center text-indigo-900">
-        <div
-            class="flex flex-row shadow-xl shadow-indigo-200 lg:hidden justify-start border-8 border-slate-800 rounded-lg mt-24 lg:mt-0">
-            <img class="" src="../../assets/txns.png" alt="" srcset="">
-        </div>
+        class="max-w-6xl w-full pb-24 min-h-screen mx-6 flex lg:flex-row flex-col lg:gap-x-16 items-center justify-center text-indigo-900">
+        
 
-        <div class="flex flex-col mt-4 lg:mt-0 lg:w-7/12 mb-24  items-center gap-y-6 justify-between text-sm">
+        <div class="flex flex-col mt-4 lg:mt-0 lg:w-7/12  items-center gap-y-6 justify-between text-sm">
 
             <div class="w-full h-full text-2xl leading-normal gap-y-3 flex flex-col rounded-lg">
                 <b class="font-bold lg:text-4xl mt-12 bg-clip-text text-transparent
@@ -284,14 +277,12 @@ justify-center items-center">
              flex-row items-center py-3 px-8 gap-x-2 rounded-lg bg-indigo-100 hover:bg-indigo-700 hover:text-white transition-all">
                     Get started now
                 </div>
-                <!-- <div class="font-semibold uppercase py-3 justify-center
-             px-8 rounded-lg bg-indigo-100 flex flex-row gap-x-2 hover:bg-indigo-800 hover:shadow-sm transition-all hover:text-white cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                  </svg>    
-                Learn more
-            </div> -->
             </div>
+        </div>
+
+        <div
+            class="flex flex-row shadow-xl shadow-indigo-200 lg:hidden justify-start border-8 border-slate-800 rounded-lg mt-8 lg:mt-0">
+            <img class="" src="../../assets/txns.png" alt="" srcset="">
         </div>
 
         <div class="hidden lg:flex w-8/12 mt-4 lg:mt-0">
