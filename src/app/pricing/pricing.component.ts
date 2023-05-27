@@ -23,7 +23,7 @@ export class PricingComponent implements OnInit {
       description: 'Best for early stage startups',
       accented: false,
       prices: {
-        buyNowMonthly: { amount: 28, stripeURL: '' },
+        buyNowMonthly: { amount: 18, stripeURL: '' },
         buyNowYearly: { amount: 19, stripeURL: '' },
         trialMonthly: { amount: 19, stripeURL: '' },
         trialYearly: { amount: 19, stripeURL: '' },
@@ -44,7 +44,7 @@ export class PricingComponent implements OnInit {
       description: 'Best for startups & smaller devshops.',
       accented: true,
       prices: {
-        buyNowMonthly: { amount: 78, stripeURL: '' },
+        buyNowMonthly: { amount: 58, stripeURL: '' },
         buyNowYearly: { amount: 19, stripeURL: '' },
         trialMonthly: { amount: 19, stripeURL: '' },
         trialYearly: { amount: 19, stripeURL: '' },
@@ -65,7 +65,7 @@ export class PricingComponent implements OnInit {
       description: 'Best for scaleups & large devshops.',
       accented: false,
       prices: {
-        buyNowMonthly: { amount: 498, stripeURL: 'https://buy.stripe.com/test_5kA9Ee7rP07Feuk5kl' },
+        buyNowMonthly: { amount: 398, stripeURL: 'https://buy.stripe.com/test_5kA9Ee7rP07Feuk5kl' },
         buyNowYearly: { amount: 91, stripeURL: '' },
         trialMonthly: { amount: 19, stripeURL: '' },
         trialYearly: { amount: 19, stripeURL: '' },
