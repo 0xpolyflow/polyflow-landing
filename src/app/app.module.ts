@@ -27,6 +27,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { FooterComponent } from './footer/footer.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { IconItemHolderComponent } from './shared/components/icon-item-holder/icon-item-holder.component';
+import { PartnershipsComponent } from './partnerships/partnerships.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +56,8 @@ import { IconItemHolderComponent } from './shared/components/icon-item-holder/ic
     FooterComponent,
     ThankYouComponent,
     IconItemHolderComponent,
+    PartnershipsComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,

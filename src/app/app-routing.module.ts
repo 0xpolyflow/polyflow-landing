@@ -8,12 +8,16 @@ import { NetworksDashboardComponent } from './dashboard/networks-dashboard/netwo
 import { HeroComponent } from './hero/hero.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
+import { PartnershipsComponent } from './partnerships/partnerships.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const routes: Routes = [
   { path: '', component: AnalyticsSectionComponent },
   { path: 'pricing', component: PricingComponent },
   { path: 'aboutus', component: AboutusComponent },
-  { path: 'thank-you', component: ThankYouComponent }
+  { path: 'thank-you', component: ThankYouComponent },
+  { path: 'partnerships', component: PartnershipsComponent },
+  { path: 'contact', component: ContactUsComponent }
 ];
 
 @NgModule({
