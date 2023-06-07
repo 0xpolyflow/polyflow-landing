@@ -29,6 +29,7 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
 import { IconItemHolderComponent } from './shared/components/icon-item-holder/icon-item-holder.component';
 import { PartnershipsComponent } from './partnerships/partnerships.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { CustomerSupportComponent } from './customer-support/customer-support.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     IconItemHolderComponent,
     PartnershipsComponent,
     ContactUsComponent,
+    CustomerSupportComponent,
   ],
   imports: [
     BrowserModule,

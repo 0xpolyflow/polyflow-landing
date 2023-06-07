@@ -12,6 +12,17 @@
             <div class="flex text-lg font-medium flex-col">Polyflow <span class=" text-slate-500 uppercase text-xs">📊 Analytics</span> </div>
         </a>
         <div class="hidden lg:flex flex-row items-center lg:gap-x-10 gap-x-6 font-medium cursor-pointer">
+            <div (mouseenter)="isProductsVisible = true" 
+                (mouseleave)="isProductsVisible = false" class="flex flex-row gap-x-2 items-center transition-all uppercase">
+                <div class="hover:text-indigo-800">Products</div> 
+                <div [class.!hidden]="!isProductsVisible" class="absolute">
+                    <div class="mt-40 bg-white shadow-sm p-6 rounded-lg flex flex-col gap-y-6">
+                        <div routerLink="/" class="hover:text-indigo-800">📊 Analytics</div>
+                        <div routerLink="/customer-support" class="hover:text-indigo-800">💬 Customer Support</div>
+    
+                    </div>
+                </div>
+            </div>
             <a class="flex flex-row gap-x-2 items-center hover:scale-105 hover:text-indigo-800 hover:font-semibold transition-all uppercase" routerLinkActive="underline" routerLink="/pricing">
                 Pricing
             </a><a href="https://docs.polyflow.dev" class="flex flex-row gap-x-2 items-center hover:scale-105 transition-all uppercase" routerLinkActive="underline">

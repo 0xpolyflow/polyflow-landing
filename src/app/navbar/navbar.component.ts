@@ -28,9 +28,22 @@ export class NavbarComponent implements OnInit {
   mobileMenuVisibleSub = new BehaviorSubject(false)
   mobileMenuVisible$ = this.mobileMenuVisibleSub.asObservable()
 
+  isProductsVisible = false
+
   constructor() { }
 
+  onMouseEnter() {
+    this.isProductsVisible = true
+  }
+
+  onMouseLeave() {
+    this.isProductsVisible = false
+  }
+
   ngOnInit(): void {
+    setTimeout(() => {
+      this.isProductsVisible = false
+    }, 100);
   }
 
   toggleMobileMenu() {
